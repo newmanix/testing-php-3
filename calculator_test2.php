@@ -22,6 +22,6 @@ class TestOfCalculator extends UnitTestCase {
 	  $myCalc = new Calculator();
 	  $this->assertEqual($myCalc->divide(1,1), 1, "1 / 1");
 	  $this->assertEqual($myCalc->divide(2,2), 1, "2 / 2");
-	  $this->assertEqual($myCalc->divide(3,0), 15, "3 / 0");
+	  $this->assertEqual($myCalc->divide(3,0), 'error', "3 / 0 - divide by zero");
 	}
 }
